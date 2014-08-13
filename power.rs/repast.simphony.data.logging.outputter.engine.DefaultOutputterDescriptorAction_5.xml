@@ -1,0 +1,32 @@
+<repast.simphony.data.logging.outputter.engine.DefaultFileOutputterDescriptor>
+  <name>AgentData</name>
+  <outputterFactory class="repast.simphony.data.logging.outputter.engine.DefaultFileOutputterDescriptor$1">
+    <outer-class reference="../.."/>
+  </outputterFactory>
+  <dataSetHandler>
+    <dataSets>
+      <string>Agent</string>
+    </dataSets>
+  </dataSetHandler>
+  <streamHandler>
+    <columns>
+      <string>Total Predicted Neighborhood Req</string>
+      <string>Total Mean Neighborhood Req</string>
+      <string>Total Current Neighborhood Req</string>
+    </columns>
+  </streamHandler>
+  <isBatchAction>false</isBatchAction>
+  <dataSetId class="string">Agent</dataSetId>
+  <fileName>c:\data\research\Dip\Agent</fileName>
+  <insertTimeToFileName>false</insertTimeToFileName>
+  <insertBatchToFileName>true</insertBatchToFileName>
+  <insertRunToFileName>true</insertRunToFileName>
+  <appendToFile>false</appendToFile>
+  <writeHeader>true</writeHeader>
+  <formatType class="repast.simphony.data.logging.outputter.LMDelimitedFormatter">
+    <streamHandler>
+      <columns/>
+    </streamHandler>
+  </formatType>
+  <delimiter>,</delimiter>
+</repast.simphony.data.logging.outputter.engine.DefaultFileOutputterDescriptor>

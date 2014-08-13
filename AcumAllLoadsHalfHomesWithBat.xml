@@ -1,0 +1,73 @@
+<Simulation>
+	<GridModel>
+		<Failure type="Exponential">
+			<Lambda value="0.0002283" />
+		</Failure>
+		<Repair type="Normal">
+			<Mean value="2" />
+			<StandardDeviation value="0.2" />
+		</Repair>
+		<BlackoutRadius type="Uniform">
+			<Min value="1"/>
+			<Max value="10"/>
+		</BlackoutRadius>
+		<PowerRateRandomModel type="DynamicRandomModel">
+			<Mean type="ExponentialDynamicFunctionModel">
+				<A value="2.298"/><B value="0.5808"/><C value="0.3028"/><D value="2.537"/>
+				<DynamicFunctionList>
+					<DynamicFunction value="getNormalPredictedDemandByPeriod">
+						<Adjuster />
+					</DynamicFunction>
+				</DynamicFunctionList>
+			</Mean>
+			<MeanFactor value="1"/>
+			<StandardDeviation value="0"/>
+			<PredictionError value="0"/>
+			<Adjuster type="Clamp">
+				<Min value="0"/>
+			</Adjuster>
+		</PowerRateRandomModel>
+		<PriceAdjustment value="0.1"/>
+	</GridModel>	
+	<AgentGenerator name="Acum Bat" population="1">
+  		<SuspendableModelGenerator type="StaticRandomModel">
+  			<Mean type="ConstantModel" format="json">
+  				<Constant value="0.1"/>
+  			</Mean>
+  		</SuspendableModelGenerator>
+  		<LoadModelGenerator name="LoadModel">
+  			<Mean type="DataModel" format="json">
+  				[548.75,523.75,507.25,506,529.25,579.75,654.25,733,810.5,870.5,914.75,942.5,966,984,985.25,969.5,929.25,909.5,911,906.75,852.75,762,665.5,596.5]
+  			</Mean>
+  			<StandardDeviation type="Constant">
+  				<Constant value="0.20952381"/>
+  			</StandardDeviation>
+  			<Adjuster type="Clamp">
+				<Min value="0"/>
+			</Adjuster>
+  		</LoadModelGenerator>
+  		<GenerationModelGenerator>
+			<Mean type="DataModel" format="json">[200,220,240,240,300,305,340,295,285,275,290,210,190,155,185,140,155,195,200,200,200,220,240,220]</Mean>
+			<StandardDeviation type="Constant">
+  				<Constant value="0.12"/>
+  			</StandardDeviation>
+  			<CostFactor type="Constant">
+  				<Constant value="3.6"/>
+  			</CostFactor>
+  			<Adjuster type="Clamp">
+				<Min value="0"/>
+			</Adjuster>
+		</GenerationModelGenerator>
+		<StorageGenerator>
+			<Capacity type="Constant">
+				<Constant value="1550"/>
+			</Capacity>
+			<CostFactor type="Constant">
+				<Constant value=".48"/>
+			</CostFactor>
+		</StorageGenerator>		
+		<ForesightRandomParameter type="Constant">
+			<Constant value="24"/> 
+		</ForesightRandomParameter>
+  	</AgentGenerator>
+</Simulation>

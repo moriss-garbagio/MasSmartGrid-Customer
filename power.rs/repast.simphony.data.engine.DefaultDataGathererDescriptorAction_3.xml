@@ -1,0 +1,168 @@
+<repast.simphony.data.engine.DefaultDataGathererDescriptor>
+  <name>Agent</name>
+  <dataSetId class="string">Agent</dataSetId>
+  <scheduleParameters>
+    <start>1.0</start>
+    <interval>1.0</interval>
+    <priority>-Infinity</priority>
+    <duration>-1.0</duration>
+    <frequency>REPEAT</frequency>
+  </scheduleParameters>
+  <dataMappingContainer class="repast.simphony.data.logging.gather.DefaultDataMappingContainer">
+    <nameMappingTable/>
+    <mappingNameTable/>
+  </dataMappingContainer>
+  <aggregateContainer class="repast.simphony.data.logging.gather.DefaultAggregateDataMappingContainer">
+    <nameMappingTable>
+      <entry>
+        <string>Total Request Sea Level</string>
+        <repast.simphony.data.logging.gather.aggregate.SumMapping>
+          <type>Sum</type>
+          <decorated class="repast.simphony.data.logging.gather.MethodMapping">
+            <method>
+              <class>power.components.Agent</class>
+              <name>getRequestSeaLevel</name>
+              <parameter-types/>
+            </method>
+          </decorated>
+        </repast.simphony.data.logging.gather.aggregate.SumMapping>
+      </entry>
+      <entry>
+        <string>CurrentFocefullySuspendedLoad</string>
+        <repast.simphony.data.logging.gather.aggregate.SumMapping>
+          <type>Sum</type>
+          <decorated class="repast.simphony.data.logging.gather.MethodMapping">
+            <method>
+              <class>power.components.Agent</class>
+              <name>getCurrentForcefullySuspendedLoad</name>
+              <parameter-types/>
+            </method>
+          </decorated>
+        </repast.simphony.data.logging.gather.aggregate.SumMapping>
+      </entry>
+      <entry>
+        <string>Total Mean Neighborhood Req</string>
+        <repast.simphony.data.logging.gather.aggregate.SumMapping>
+          <type>Sum</type>
+          <decorated class="repast.simphony.data.logging.gather.MethodMapping">
+            <method>
+              <class>power.components.Agent</class>
+              <name>getMeanNeighborhoodRequest</name>
+              <parameter-types/>
+            </method>
+          </decorated>
+        </repast.simphony.data.logging.gather.aggregate.SumMapping>
+      </entry>
+      <entry>
+        <string>UnsatisfiedLoadCount</string>
+        <repast.simphony.data.logging.gather.aggregate.SumMapping>
+          <type>Sum</type>
+          <decorated class="repast.simphony.data.logging.gather.MethodMapping">
+            <method>
+              <class>power.components.Agent</class>
+              <name>getUnsatisfiedLoadCount</name>
+              <parameter-types/>
+            </method>
+          </decorated>
+        </repast.simphony.data.logging.gather.aggregate.SumMapping>
+      </entry>
+      <entry>
+        <string>Total Curremt Power Sold To Neigh</string>
+        <repast.simphony.data.logging.gather.aggregate.SumMapping>
+          <type>Sum</type>
+          <decorated class="repast.simphony.data.logging.gather.MethodMapping">
+            <method>
+              <class>power.components.Agent</class>
+              <name>getCurrentPowerSoldToNeighbors</name>
+              <parameter-types/>
+            </method>
+          </decorated>
+        </repast.simphony.data.logging.gather.aggregate.SumMapping>
+      </entry>
+      <entry>
+        <string>Total Predicted Neighborhood Req</string>
+        <repast.simphony.data.logging.gather.aggregate.SumMapping>
+          <type>Sum</type>
+          <decorated class="repast.simphony.data.logging.gather.MethodMapping">
+            <method>
+              <class>power.components.Agent</class>
+              <name>getPredictedNeighborhoodRequest</name>
+              <parameter-types/>
+            </method>
+          </decorated>
+        </repast.simphony.data.logging.gather.aggregate.SumMapping>
+      </entry>
+      <entry>
+        <string>Avg Profit</string>
+        <repast.simphony.data.logging.gather.aggregate.MeanMapping>
+          <type>Mean</type>
+          <decorated class="repast.simphony.data.logging.gather.MethodMapping">
+            <method>
+              <class>power.components.Agent</class>
+              <name>getCurrentProfit</name>
+              <parameter-types/>
+            </method>
+          </decorated>
+        </repast.simphony.data.logging.gather.aggregate.MeanMapping>
+      </entry>
+      <entry>
+        <string>Tick</string>
+        <repast.simphony.data.logging.gather.DefaultTimeDataMapping/>
+      </entry>
+      <entry>
+        <string>Total Current Neighborhood Req</string>
+        <repast.simphony.data.logging.gather.aggregate.SumMapping>
+          <type>Sum</type>
+          <decorated class="repast.simphony.data.logging.gather.MethodMapping">
+            <method>
+              <class>power.components.Agent</class>
+              <name>getCurrentNeighborhoodRequest</name>
+              <parameter-types/>
+            </method>
+          </decorated>
+        </repast.simphony.data.logging.gather.aggregate.SumMapping>
+      </entry>
+    </nameMappingTable>
+    <mappingNameTable>
+      <entry>
+        <repast.simphony.data.logging.gather.DefaultTimeDataMapping reference="../../../nameMappingTable/entry[8]/repast.simphony.data.logging.gather.DefaultTimeDataMapping"/>
+        <string>Tick</string>
+      </entry>
+      <entry>
+        <repast.simphony.data.logging.gather.aggregate.SumMapping reference="../../../nameMappingTable/entry[6]/repast.simphony.data.logging.gather.aggregate.SumMapping"/>
+        <string>Total Predicted Neighborhood Req</string>
+      </entry>
+      <entry>
+        <repast.simphony.data.logging.gather.aggregate.SumMapping reference="../../../nameMappingTable/entry[3]/repast.simphony.data.logging.gather.aggregate.SumMapping"/>
+        <string>Total Mean Neighborhood Req</string>
+      </entry>
+      <entry>
+        <repast.simphony.data.logging.gather.aggregate.SumMapping reference="../../../nameMappingTable/entry/repast.simphony.data.logging.gather.aggregate.SumMapping"/>
+        <string>Total Request Sea Level</string>
+      </entry>
+      <entry>
+        <repast.simphony.data.logging.gather.aggregate.SumMapping reference="../../../nameMappingTable/entry[2]/repast.simphony.data.logging.gather.aggregate.SumMapping"/>
+        <string>CurrentFocefullySuspendedLoad</string>
+      </entry>
+      <entry>
+        <repast.simphony.data.logging.gather.aggregate.MeanMapping reference="../../../nameMappingTable/entry[7]/repast.simphony.data.logging.gather.aggregate.MeanMapping"/>
+        <string>Avg Profit</string>
+      </entry>
+      <entry>
+        <repast.simphony.data.logging.gather.aggregate.SumMapping reference="../../../nameMappingTable/entry[4]/repast.simphony.data.logging.gather.aggregate.SumMapping"/>
+        <string>UnsatisfiedLoadCount</string>
+      </entry>
+      <entry>
+        <repast.simphony.data.logging.gather.aggregate.SumMapping reference="../../../nameMappingTable/entry[5]/repast.simphony.data.logging.gather.aggregate.SumMapping"/>
+        <string>Total Curremt Power Sold To Neigh</string>
+      </entry>
+      <entry>
+        <repast.simphony.data.logging.gather.aggregate.SumMapping reference="../../../nameMappingTable/entry[9]/repast.simphony.data.logging.gather.aggregate.SumMapping"/>
+        <string>Total Current Neighborhood Req</string>
+      </entry>
+    </mappingNameTable>
+    <alternatedNameTable/>
+    <nameAlternatedTable/>
+  </aggregateContainer>
+  <agentClass>power.components.Agent</agentClass>
+</repast.simphony.data.engine.DefaultDataGathererDescriptor>

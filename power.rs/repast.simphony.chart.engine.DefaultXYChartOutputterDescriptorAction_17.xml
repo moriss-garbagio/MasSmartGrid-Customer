@@ -1,0 +1,48 @@
+<repast.simphony.chart.engine.DefaultXYChartOutputterDescriptor>
+  <name>Price</name>
+  <outputterFactory class="repast.simphony.chart.wizard.XYChartMappingsStep$XYFactory"/>
+  <dataSetHandler>
+    <dataSets>
+      <string>Grid</string>
+    </dataSets>
+  </dataSetHandler>
+  <streamHandler>
+    <columns/>
+  </streamHandler>
+  <isBatchAction>false</isBatchAction>
+  <dataSetId class="string">Grid</dataSetId>
+  <showLegend>true</showLegend>
+  <multipleSeries>false</multipleSeries>
+  <xColumnName>Tick</xColumnName>
+  <autoRangeX>true</autoRangeX>
+  <autoRangeY>true</autoRangeY>
+  <visibleXRange>100.0</visibleXRange>
+  <visibleYRange>0.0</visibleYRange>
+  <xMin>0.0</xMin>
+  <xMax>0.0</xMax>
+  <yMin>0.0</yMin>
+  <yMax>0.0</yMax>
+  <precisionValue>3</precisionValue>
+  <maxHistory>500</maxHistory>
+  <seriesType>LINE</seriesType>
+  <series>
+    <repast.simphony.chart.Series>
+      <seriesID>GridPredictedBasePriceLabel</seriesID>
+      <valueColumn>GridPredictedBasePrice</valueColumn>
+      <hashCode>448261877</hashCode>
+      <proxy>false</proxy>
+    </repast.simphony.chart.Series>
+    <repast.simphony.chart.Series>
+      <seriesID>GridMeanBasePriceLabel</seriesID>
+      <valueColumn>GridMeanBasePrice</valueColumn>
+      <hashCode>211177177</hashCode>
+      <proxy>false</proxy>
+    </repast.simphony.chart.Series>
+    <repast.simphony.chart.Series>
+      <seriesID>GridCurrentBasePriceLabel</seriesID>
+      <valueColumn>GridCurrentBasePrice</valueColumn>
+      <hashCode>1119645305</hashCode>
+      <proxy>false</proxy>
+    </repast.simphony.chart.Series>
+  </series>
+</repast.simphony.chart.engine.DefaultXYChartOutputterDescriptor>

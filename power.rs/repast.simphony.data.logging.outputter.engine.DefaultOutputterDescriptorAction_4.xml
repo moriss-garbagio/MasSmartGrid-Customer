@@ -1,0 +1,33 @@
+<repast.simphony.data.logging.outputter.engine.DefaultFileOutputterDescriptor>
+  <name>GridData</name>
+  <outputterFactory class="repast.simphony.data.logging.outputter.engine.DefaultFileOutputterDescriptor$1">
+    <outer-class reference="../.."/>
+  </outputterFactory>
+  <dataSetHandler>
+    <dataSets>
+      <string>Grid</string>
+    </dataSets>
+  </dataSetHandler>
+  <streamHandler>
+    <columns>
+      <string>Tick</string>
+      <string>GridLoadFactor</string>
+      <string>GridCurrentBasePrice</string>
+      <string>GridDemandSTD</string>
+    </columns>
+  </streamHandler>
+  <isBatchAction>false</isBatchAction>
+  <dataSetId class="string">Grid</dataSetId>
+  <fileName>c:\data\research\Dip\Grid</fileName>
+  <insertTimeToFileName>false</insertTimeToFileName>
+  <insertBatchToFileName>true</insertBatchToFileName>
+  <insertRunToFileName>true</insertRunToFileName>
+  <appendToFile>false</appendToFile>
+  <writeHeader>true</writeHeader>
+  <formatType class="repast.simphony.data.logging.outputter.LMDelimitedFormatter">
+    <streamHandler>
+      <columns/>
+    </streamHandler>
+  </formatType>
+  <delimiter>,</delimiter>
+</repast.simphony.data.logging.outputter.engine.DefaultFileOutputterDescriptor>

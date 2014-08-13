@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<sweep runs="20"> 
+	<parameter name="isConnected" type="constant" constant_type="boolean" value="true" />
+	<parameter name="canTrade" type="constant" constant_type="boolean" value="false" />
+	<parameter name="beGenerationScrooge" type="constant" constant_type="boolean" value="false" />
+	<parameter name="canSuspendLoad" type="constant" constant_type="boolean" value="false" />
+	<parameter name="endSimulationTick" type="constant" constant_type="number" value="12000" />
+	<parameter name="forceDumping" type="constant" constant_type="boolean" value="false" />
+	<parameter name="orderNeighbors" type="constant" constant_type="boolean" value="true" />
+	<parameter name="windowSize" type="constant" constant_type="number" value="1200" />
+	<parameter name="maxDegree" type="constant" constant_type="number" value="12" />
+	<parameter name="minDegree" type="constant" constant_type="number" value="12" />
+	<parameter name="maxNumberOfRounds" type="constant" constant_type="number" value="12" />
+	<parameter name="historyValue" type="constant" constant_type="number" value="0.99875" />
+	<parameter name="hourlyGridBuyBack" type="constant" constant_type="number" value="1000000000.0" />
+	<parameter name="fileName" type="constant" constant_type="string" value="Mix-NothingOnly.xml" />
+	<parameter name="pauseOnBlackout" type="constant" constant_type="boolean" value="true" />
+	<parameter name="period" type="constant" constant_type="number" value="24" />
+	<parameter name="simulateReliability" type="constant" constant_type="boolean" value="false" />
+	<parameter name="smartFraction" type="constant" constant_type="number" value="1.0" />
+	<!-- 
+		<parameter name="resourceFactor" type="constant" constant_type="number" value="1.0"/>
+	-->
+	<parameter name="generationFactor" type="constant" constant_type="number" value="1.0"/>
+	<parameter name="suspendFactor" type="constant" constant_type="number" value="1.0" />
+	<parameter name="resourceFactor" type="number" start="0" end=".25" step="0.25"/>
+	<!-- 
+		<parameter name="generationFactor" type="list" value_type="double" values="0 .5 1 1.5 2 2.5 3 3.5 4 4.5 5" />
+		<parameter name="suspendFactor" type="list" value_type="double" values="0 .5 1 1.5 2 2.5 3 3.5 4 4.5 5" />
+	-->
+</sweep>

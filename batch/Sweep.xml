@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMLInputData>
+<numberOfRuns>1</numberOfRuns>
+<name></name>
+<mainScenario>power.rs</mainScenario>
+<projectPath></projectPath>
+<batchXMLPath>crap.xml</batchXMLPath>
+<remoteBatchXML>crap.xml</remoteBatchXML>
+<scenario></scenario>
+<delayTime>5</delayTime>
+<removeFiles>false</removeFiles>
+<createJar>false</createJar>
+</XMLInputData>

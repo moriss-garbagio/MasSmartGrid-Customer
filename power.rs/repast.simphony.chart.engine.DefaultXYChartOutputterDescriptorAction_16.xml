@@ -1,0 +1,60 @@
+<repast.simphony.chart.engine.DefaultXYChartOutputterDescriptor>
+  <name>Neighborhood</name>
+  <outputterFactory class="repast.simphony.chart.wizard.XYChartMappingsStep$XYFactory"/>
+  <dataSetHandler>
+    <dataSets>
+      <string>Agent</string>
+    </dataSets>
+  </dataSetHandler>
+  <streamHandler>
+    <columns/>
+  </streamHandler>
+  <isBatchAction>false</isBatchAction>
+  <dataSetId class="string">Agent</dataSetId>
+  <showLegend>true</showLegend>
+  <multipleSeries>false</multipleSeries>
+  <xColumnName>Tick</xColumnName>
+  <autoRangeX>true</autoRangeX>
+  <autoRangeY>true</autoRangeY>
+  <visibleXRange>100.0</visibleXRange>
+  <visibleYRange>0.0</visibleYRange>
+  <xMin>0.0</xMin>
+  <xMax>0.0</xMax>
+  <yMin>0.0</yMin>
+  <yMax>0.0</yMax>
+  <precisionValue>3</precisionValue>
+  <maxHistory>500</maxHistory>
+  <seriesType>LINE</seriesType>
+  <series>
+    <repast.simphony.chart.Series>
+      <seriesID>Total Curremt Power Sold To Neigh</seriesID>
+      <valueColumn>Total Curremt Power Sold To Neigh</valueColumn>
+      <hashCode>-924923977</hashCode>
+      <proxy>true</proxy>
+    </repast.simphony.chart.Series>
+    <repast.simphony.chart.Series>
+      <seriesID>Total Current Neighborhood Req</seriesID>
+      <valueColumn>Total Current Neighborhood Req</valueColumn>
+      <hashCode>487140451</hashCode>
+      <proxy>true</proxy>
+    </repast.simphony.chart.Series>
+    <repast.simphony.chart.Series>
+      <seriesID>Total Request Sea Level</seriesID>
+      <valueColumn>Total Request Sea Level</valueColumn>
+      <hashCode>-1418912179</hashCode>
+      <proxy>true</proxy>
+    </repast.simphony.chart.Series>
+    <repast.simphony.chart.Series>
+      <seriesID>Total Predicted Neighborhood Req</seriesID>
+      <valueColumn>Total Predicted Neighborhood Req</valueColumn>
+      <hashCode>1648549705</hashCode>
+      <proxy>true</proxy>
+    </repast.simphony.chart.Series>
+    <repast.simphony.chart.Series>
+      <seriesID>Total Mean Neighborhood Req</seriesID>
+      <valueColumn>Total Mean Neighborhood Req</valueColumn>
+      <hashCode>2101071051</hashCode>
+      <proxy>true</proxy>
+    </repast.simphony.chart.Series>
+  </series>
+</repast.simphony.chart.engine.DefaultXYChartOutputterDescriptor>
